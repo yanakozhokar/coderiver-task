@@ -4,6 +4,10 @@ import css from "./App.module.css";
 import Logo from "../Logo/Logo";
 import Line from "../Line/Line";
 import HeroTitle from "../HeroTitle/HeroTitle";
+import HeroImg from "../HeroImg/HeroImg";
+import Title from "../Title/Title";
+import Slider from "../Slider/Slider";
+import BuyBtn from "../BuyBtn/BuyBtn";
 
 export const App = () => {
   return (
@@ -12,7 +16,7 @@ export const App = () => {
         <div className={css.container}>
           <Logo />
           <NavMenu />
-          <p className={css.headerBuy}>Buy</p>
+          <BuyBtn />
         </div>
       </header>
       <main>
@@ -25,13 +29,18 @@ export const App = () => {
               </div>
               <HeroTitle />
             </div>
-            <div className={css.heroImgContainer}>
-              <div className={css.heroImg}></div>
-            </div>
             <Line />
+            <HeroImg />
+          </div>
+        </section>
+        <section className={css.about}>
+          <div className={css.container}>
+            <Title>Choose looks</Title>
+            <Slider />
           </div>
         </section>
       </main>
+      <footer></footer>
     </>
   );
 };
