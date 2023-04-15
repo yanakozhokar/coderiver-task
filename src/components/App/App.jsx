@@ -1,6 +1,6 @@
 import NavMenu from "../NavMenu/NavMenu";
 import PlatformsList from "../PlatformsList/PlatformsList";
-import heroImg1x from "../../images/hero-desk-1x.jpg";
+import heroImg1x from "../../images/hero-img-desk-1x.jpg";
 // import heroImg2x from '../../images/hero-desk-2x.jpg';
 import css from "./App.module.css";
 import Logo from "../Logo/Logo";
@@ -32,7 +32,7 @@ export const App = () => {
               </h1>
             </div>
             <div className={css.heroImgContainer}>
-              <img src={heroImg1x} alt="Woman" />
+              <div className={css.heroMask}></div>
             </div>
           </div>
         </section>
