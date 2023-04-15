@@ -49,7 +49,11 @@
   background-color: #f54329;
 }
 
+.hero {
+}
+
 .hero .container {
+  position: relative;
   display: flex;
   gap: 101px;
 }

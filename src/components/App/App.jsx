@@ -28,8 +28,8 @@ export const App = () => {
             <div className={css.heroImgContainer}>
               <div className={css.heroImg}></div>
             </div>
+            <Line />
           </div>
-          <Line />
         </section>
       </main>
     </>
