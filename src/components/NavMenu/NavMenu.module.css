@@ -1,8 +1,7 @@
 .navList {
   display: flex;
-  gap: 109px;
+  gap: 79px;
   margin-left: auto;
   font-size: 18px;
   line-height: 1.16;
-  color: #000000;
 }

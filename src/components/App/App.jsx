@@ -1,9 +1,9 @@
 import NavMenu from "../NavMenu/NavMenu";
 import PlatformsList from "../PlatformsList/PlatformsList";
-import heroImg1x from "../../images/hero-img-desk-1x.jpg";
-// import heroImg2x from '../../images/hero-desk-2x.jpg';
 import css from "./App.module.css";
 import Logo from "../Logo/Logo";
+import Line from "../Line/Line";
+import HeroTitle from "../HeroTitle/HeroTitle";
 
 export const App = () => {
   return (
@@ -23,18 +23,13 @@ export const App = () => {
                 <PlatformsList />
                 <p className={css.heroPlatformsText}>App available</p>
               </div>
-              <h1 className={css.heroTitle}>
-                Choose your winter{" "}
-                <span className={css.heroAccentText}>
-                  look<sup>*</sup>
-                </span>{" "}
-                apparel
-              </h1>
+              <HeroTitle />
             </div>
             <div className={css.heroImgContainer}>
-              <div className={css.heroMask}></div>
+              <div className={css.heroImg}></div>
             </div>
           </div>
+          <Line />
         </section>
       </main>
     </>

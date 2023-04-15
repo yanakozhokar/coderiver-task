@@ -1,6 +1,26 @@
 .container {
+  margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .header .container {
@@ -15,7 +35,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  margin-left: 89px;
+  margin-left: 79px;
   width: 106px;
   height: 106px;
   border-radius: 50%;
@@ -29,17 +49,31 @@
   background-color: #f54329;
 }
 
+.hero .container {
+  display: flex;
+  gap: 101px;
+}
+
+.heroDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .heroPlatformsText {
   margin-top: 12px;
+  font-size: 18px;
+  line-height: 1.16;
 }
 
 .heroImgContainer {
   position: relative;
+  z-index: 5;
   width: 476px;
   height: 710px;
 }
 
-.heroMask {
+.heroImg {
   position: absolute;
   top: 0;
   left: 0;

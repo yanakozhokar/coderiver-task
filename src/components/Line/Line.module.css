@@ -1,0 +1,11 @@
+.line {
+  position: absolute;
+  top: 155px;
+  left: 0;
+  width: 100%;
+  height: 349px;
+  fill: none;
+  stroke: #647ce9;
+  stroke-linecap: round;
+  stroke-width: 6px;
+}
