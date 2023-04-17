@@ -1,5 +1,11 @@
+.slider-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .slider-control-centerleft > button,
 .slider-control-centerright > button {
+  position: relative;
   width: 76px;
   height: 76px;
   border-radius: 50%;
@@ -12,9 +18,12 @@
   opacity: 1 !important;
 }
 
-.slider-control-centerleft,
-.slider-control-centerright {
-  position: relative;
+.slider-control-centerleft > button {
+  margin-left: -60px;
+}
+
+.slider-control-centerright > button {
+  margin-right: -60px;
 }
 
 .slider-control-centerleft > button::after {
