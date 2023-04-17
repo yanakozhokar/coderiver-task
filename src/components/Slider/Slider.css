@@ -1,0 +1,40 @@
+.slider-control-centerleft > button,
+.slider-control-centerright > button {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.slider-control-centerleft > button:disabled,
+.slider-control-centerright > button:disabled {
+  opacity: 1 !important;
+}
+
+.slider-control-centerleft,
+.slider-control-centerright {
+  position: relative;
+}
+
+.slider-control-centerleft > button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 29px;
+  height: 29px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../images/arrow-prev.svg");
+}
+
+.slider-control-centerright > button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 29px;
+  height: 29px;
+  transform: translate(-50%, -50%);
+  background-image: url("../../images/arrow-next.svg");
+}
