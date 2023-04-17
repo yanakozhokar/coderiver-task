@@ -15,9 +15,6 @@ export default function Slider() {
     const nextBtn = document.querySelector(
       ".slider-control-centerright > button"
     );
-    const pagination = document.querySelector(".slider-control-bottomcenter");
-
-    pagination.innerHTML = "";
     prevBtn.textContent = "";
     nextBtn.textContent = "";
   });
@@ -39,12 +36,13 @@ export default function Slider() {
       disableDotControls={true}
       wrapAround={true}
       disableEdgeSwiping={true}
+      renderBottomCenterControls={null}
     >
-      <img src={Sweater} width={239} height={304} alt="Art" />
-      <img src={Mountain} width={239} height={304} alt="Art" />
-      <img src={Woman} width={239} height={304} alt="Art" />
-      <img src={Shoes} width={239} height={304} alt="Art" />
-      <img src={Leg} width={239} height={304} alt="Art" />
+      <img src={Sweater} width={239} height={304} alt="Sweater" />
+      <img src={Mountain} width={239} height={304} alt="Mountain" />
+      <img src={Woman} width={239} height={304} alt="Woman" />
+      <img src={Shoes} width={239} height={304} alt="Shoes" />
+      <img src={Leg} width={239} height={304} alt="Leg" />
     </Carousel>
   );
 }
