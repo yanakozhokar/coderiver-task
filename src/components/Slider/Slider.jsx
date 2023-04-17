@@ -37,6 +37,8 @@ export default function Slider() {
       slidesToShow={slidesAmount()}
       cellSpacing={50}
       disableDotControls={true}
+      wrapAround={true}
+      disableEdgeSwiping={true}
     >
       <img src={Sweater} width={239} height={304} alt="Art" />
       <img src={Mountain} width={239} height={304} alt="Art" />
