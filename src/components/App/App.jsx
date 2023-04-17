@@ -8,8 +8,17 @@ import Title from "../Title/Title";
 import Slider from "../Slider/Slider";
 import BuyBtn from "../BuyBtn/BuyBtn";
 import HeroPlatforms from "../HeroPlatforms/HeroPlatforms";
+import OpenMenuBtn from "../OpenMenuBtn/OpenMenuBtn";
+import { useState } from "react";
+import MenuModal from "../MenuModal/MenuModal";
 
 export const App = () => {
+  const [modal, setModal] = useState(false);
+
+  function toggleModal() {
+    setModal(!modal);
+  }
+
   return (
     <>
       <header className={css.header}>
@@ -17,6 +26,8 @@ export const App = () => {
           <Logo />
           <NavMenu />
           <BuyBtn />
+          <OpenMenuBtn openModal={toggleModal} />
+          {modal && <MenuModal closeModal={toggleModal} />}
         </div>
       </header>
       <main>
