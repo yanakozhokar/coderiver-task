@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Logo from "./Logo/Logo";
@@ -21,6 +21,8 @@ AOS.init({
 
 export const App = () => {
   const [modal, setModal] = useState(false);
+
+  useEffect(() => {});
 
   function toggleModal() {
     setModal(!modal);

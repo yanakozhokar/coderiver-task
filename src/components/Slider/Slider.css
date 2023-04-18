@@ -72,15 +72,9 @@
 
 .slider-img {
   width: 100%;
+  transition: transform 500ms;
 }
 
-/* @media (min-width: 768px) {
-  .slider-img {
-    margin-left: -60px;
-  }
+.slider-img:hover {
+  transform: scale(1.1);
 }
-@media (min-width: 1200px) {
-  .slider-img {
-    margin-right: -60px;
-  }
-} */

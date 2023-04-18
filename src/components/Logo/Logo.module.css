@@ -5,3 +5,27 @@
   text-decoration: none;
   color: #2e3341;
 }
+
+.logo:hover {
+  transition: transform 2s;
+  transform: rotateY(360deg);
+}
+
+.logoAnimation {
+  animation-name: logoAnimation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}

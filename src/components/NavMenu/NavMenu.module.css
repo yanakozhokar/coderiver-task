@@ -21,3 +21,13 @@
     gap: 79px;
   }
 }
+
+.navItem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.navItem:hover {
+  border-color: #000000;
+}
