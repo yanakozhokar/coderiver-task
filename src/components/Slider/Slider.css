@@ -28,12 +28,23 @@
 
 @media (min-width: 1200px) {
   .slider-control-centerleft > button {
-    margin-left: -60px;
+    left: -60px;
   }
 }
 @media (min-width: 1200px) {
   .slider-control-centerright > button {
-    margin-right: -60px;
+    right: -60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .slider-control-centerleft > button {
+    left: -95px;
+  }
+}
+@media (min-width: 1300px) {
+  .slider-control-centerright > button {
+    right: -95px;
   }
 }
 
@@ -62,3 +73,14 @@
 .slider-img {
   width: 100%;
 }
+
+/* @media (min-width: 768px) {
+  .slider-img {
+    margin-left: -60px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-img {
+    margin-right: -60px;
+  }
+} */
