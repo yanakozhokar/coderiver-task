@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 45px;
   max-width: 503px;
-  font-family: "Oswald";
+  font-family: 'Oswald';
   font-weight: 500;
   font-size: 60px;
   line-height: 1.17;
@@ -19,7 +19,7 @@
 
 @media (min-width: 1200px) {
   .heroTitle {
-    font-size: 90px;
+    font-size: 86px;
   }
 }
 
