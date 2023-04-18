@@ -6,11 +6,19 @@
 .slider-control-centerleft > button,
 .slider-control-centerright > button {
   position: relative;
-  width: 76px;
-  height: 76px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: #ffffff !important;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .slider-control-centerleft > button,
+  .slider-control-centerright > button {
+    width: 76px;
+    height: 76px;
+  }
 }
 
 .slider-control-centerleft > button:disabled,
@@ -18,12 +26,15 @@
   opacity: 1 !important;
 }
 
-.slider-control-centerleft > button {
-  margin-left: -60px;
+@media (min-width: 1200px) {
+  .slider-control-centerleft > button {
+    margin-left: -60px;
+  }
 }
-
-.slider-control-centerright > button {
-  margin-right: -60px;
+@media (min-width: 1200px) {
+  .slider-control-centerright > button {
+    margin-right: -60px;
+  }
 }
 
 .slider-control-centerleft > button::after {
@@ -46,4 +57,8 @@
   height: 29px;
   transform: translate(-50%, -50%);
   background-image: url("../../images/arrow-next.svg");
+}
+
+.slider-img {
+  width: 100%;
 }

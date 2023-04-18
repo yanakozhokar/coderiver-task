@@ -17,7 +17,7 @@ export default function Slider() {
     );
     prevBtn.textContent = "";
     nextBtn.textContent = "";
-  });
+  }, []);
 
   function slidesAmount() {
     if (window.innerWidth < 768) {
@@ -38,11 +38,41 @@ export default function Slider() {
       disableEdgeSwiping={true}
       renderBottomCenterControls={null}
     >
-      <img src={Sweater} width={239} height={304} alt="Sweater" />
-      <img src={Mountain} width={239} height={304} alt="Mountain" />
-      <img src={Woman} width={239} height={304} alt="Woman" />
-      <img src={Shoes} width={239} height={304} alt="Shoes" />
-      <img src={Leg} width={239} height={304} alt="Leg" />
+      <img
+        src={Sweater}
+        width={239}
+        height={304}
+        alt="Sweater"
+        className="slider-img"
+      />
+      <img
+        src={Mountain}
+        width={239}
+        height={304}
+        alt="Mountain"
+        className="slider-img"
+      />
+      <img
+        src={Woman}
+        width={239}
+        height={304}
+        alt="Woman"
+        className="slider-img"
+      />
+      <img
+        src={Shoes}
+        width={239}
+        height={304}
+        alt="Shoes"
+        className="slider-img"
+      />
+      <img
+        src={Leg}
+        width={239}
+        height={304}
+        alt="Leg"
+        className="slider-img"
+      />
     </Carousel>
   );
 }
