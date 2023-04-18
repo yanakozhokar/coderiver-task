@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Sweater from "../../images/sweater-desk-1x.jpg";
 import Mountain from "../../images/mountain-desk-1x.jpg";
 import Woman from "../../images/woman-desk-1x.jpg";
@@ -8,6 +8,8 @@ import Carousel from "nuka-carousel";
 import "./Slider.css";
 
 export default function Slider() {
+  const [slides, setSlides] = useState(slidesAmount());
+
   useEffect(() => {
     const prevBtn = document.querySelector(
       ".slider-control-centerleft > button"
@@ -17,6 +19,15 @@ export default function Slider() {
     );
     prevBtn.textContent = "";
     nextBtn.textContent = "";
+
+    function handleResize() {
+      setSlides(slidesAmount());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   function slidesAmount() {
@@ -31,7 +42,7 @@ export default function Slider() {
 
   return (
     <Carousel
-      slidesToShow={slidesAmount()}
+      slidesToShow={slides}
       cellSpacing={50}
       disableDotControls={true}
       wrapAround={true}
