@@ -8,7 +8,7 @@ import Carousel from "nuka-carousel";
 import "./Slider.css";
 
 export default function Slider() {
-  const [slides, setSlides] = useState(slidesAmount());
+  const [slides, setSlides] = useState(() => slidesAmount());
 
   useEffect(() => {
     const prevBtn = document.querySelector(

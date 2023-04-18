@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Logo from "./Logo/Logo";
 import NavMenu from "./NavMenu/NavMenu";
 import BuyBtn from "./BuyBtn/BuyBtn";
@@ -12,6 +14,11 @@ import Title from "./Title/Title";
 import Slider from "./Slider/Slider";
 import css from "./App.module.css";
 
+AOS.init({
+  once: true,
+  duration: 1000,
+});
+
 export const App = () => {
   const [modal, setModal] = useState(false);
 
@@ -24,7 +31,7 @@ export const App = () => {
 
   return (
     <>
-      <header className={css.header}>
+      <header className={css.header} data-aos="fade-down">
         <div className={css.container}>
           <Logo />
           <NavMenu />
@@ -34,7 +41,7 @@ export const App = () => {
         </div>
       </header>
       <main>
-        <section className={css.hero}>
+        <section className={css.hero} data-aos="fade-down">
           <div className={css.container}>
             <div className={css.heroDescription}>
               <HeroPlatforms />
@@ -44,7 +51,7 @@ export const App = () => {
             <Line />
           </div>
         </section>
-        <section className={css.about}>
+        <section className={css.about} data-aos="fade-down">
           <div className={css.container}>
             <Title>Choose looks</Title>
             <Slider />
