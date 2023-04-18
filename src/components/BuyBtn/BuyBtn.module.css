@@ -19,7 +19,7 @@
 
 .buyBtnAnimation {
   animation-name: buyBtnAnimation;
-  animation-duration: 1500ms;
+  animation-duration: 1s;
   animation-timing-function: linear;
 }
 

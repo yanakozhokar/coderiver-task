@@ -1,13 +1,17 @@
 import css from "./HeroTitle.module.css";
 
 export default function HeroTitle() {
-    return (
-      <h1 className={css.heroTitle}>
-        Choose your winter{" "}
-        <span className={css.heroAccentText}>
-          look<sup className={css.heroAccentTextAsteric}>*</sup>
-        </span>{" "}
-        apparel
-      </h1>
-    );
+  function onHeroTitleMouseover() {
+    const label = document.querySelector(`${css.heroLabel}`);
+  }
+
+  return (
+    <h1 className={css.heroTitle} onMouseOver={onHeroTitleMouseover}>
+      Choose your winter{" "}
+      <span className={css.heroLabel}>
+        look<sup className={css.heroLabelAsteric}>*</sup>
+      </span>{" "}
+      apparel
+    </h1>
+  );
 }

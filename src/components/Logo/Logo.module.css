@@ -6,10 +6,10 @@
   color: #2e3341;
 }
 
-.logo:hover {
+/* .logo:hover {
   transition: transform 2s;
   transform: rotateY(360deg);
-}
+} */
 
 .logoAnimation {
   animation-name: logoAnimation;

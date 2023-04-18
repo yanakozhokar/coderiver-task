@@ -7,7 +7,7 @@ export default function BuyBtn() {
 
     setTimeout(() => {
       btnRef.className = `${css.buyBtn}`;
-    }, 1500);
+    }, 1000);
   }
 
   return (

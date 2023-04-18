@@ -23,7 +23,7 @@
   }
 }
 
-.heroAccentText {
+.heroLabel {
   display: inline-block;
   border-radius: 9px;
   transform: rotate(10.48deg);
@@ -32,7 +32,7 @@
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
-.heroAccentTextAsteric {
+.heroLabelAsteric {
   position: absolute;
   top: -13px;
   right: -25px;
