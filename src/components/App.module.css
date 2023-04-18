@@ -37,7 +37,15 @@
 .hero .container {
   position: relative;
   display: flex;
-  gap: 101px;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (min-width: 768px) {
+  .hero .container {
+    flex-direction: row;
+    gap: 101px;
+  }
 }
 
 .heroDescription {

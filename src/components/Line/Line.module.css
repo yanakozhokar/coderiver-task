@@ -1,4 +1,5 @@
 .line {
+  display: none;
   position: absolute;
   top: -42px;
   left: 0;
@@ -9,4 +10,10 @@
   stroke: #647ce9;
   stroke-linecap: round;
   stroke-width: 6px;
+}
+
+@media (min-width: 1200px) {
+  .line {
+    display: block;
+  }
 }

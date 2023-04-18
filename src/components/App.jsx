@@ -1,16 +1,16 @@
-import NavMenu from "../NavMenu/NavMenu";
-import css from "./App.module.css";
-import Logo from "../Logo/Logo";
-import Line from "../Line/Line";
-import HeroTitle from "../HeroTitle/HeroTitle";
-import HeroImg from "../HeroImg/HeroImg";
-import Title from "../Title/Title";
-import Slider from "../Slider/Slider";
-import BuyBtn from "../BuyBtn/BuyBtn";
-import HeroPlatforms from "../HeroPlatforms/HeroPlatforms";
-import OpenMenuBtn from "../OpenMenuBtn/OpenMenuBtn";
 import { useState } from "react";
-import MenuModal from "../MenuModal/MenuModal";
+import Logo from "./Logo/Logo";
+import NavMenu from "./NavMenu/NavMenu";
+import BuyBtn from "./BuyBtn/BuyBtn";
+import OpenMenuBtn from "./OpenMenuBtn/OpenMenuBtn";
+import MenuModal from "./MenuModal/MenuModal";
+import HeroPlatforms from "./HeroPlatforms/HeroPlatforms";
+import HeroTitle from "./HeroTitle/HeroTitle";
+import HeroImg from "./HeroImg/HeroImg";
+import Line from "./Line/Line";
+import Title from "./Title/Title";
+import Slider from "./Slider/Slider";
+import css from "./App.module.css";
 
 export const App = () => {
   const [modal, setModal] = useState(false);
