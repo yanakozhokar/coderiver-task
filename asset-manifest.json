@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46ad07d2.css",
+    "main.js": "/static/js/main.6a1a33b3.js",
+    "static/media/hero-img-desk-1x.jpg": "/static/media/hero-img-desk-1x.9b1fbb917a8e62c4d147.jpg",
+    "static/media/hero-mask.png": "/static/media/hero-mask.829b897b2b45afef94a1.png",
+    "static/media/hero-img-mob-1x.jpg": "/static/media/hero-img-mob-1x.effa32257d5b2533bb95.jpg",
+    "static/media/mountain-desk-1x.jpg": "/static/media/mountain-desk-1x.7e0f8f265e8f46526b14.jpg",
+    "static/media/woman-desk-1x.jpg": "/static/media/woman-desk-1x.46d4dc4fad7b6f02f6e0.jpg",
+    "static/media/leg-desk-1x.jpg": "/static/media/leg-desk-1x.01091e21828bedeb319e.jpg",
+    "index.html": "/index.html",
+    "static/media/arrow-prev.svg": "/static/media/arrow-prev.dc8b67a6eaa9636f2f8a.svg",
+    "static/media/arrow-next.svg": "/static/media/arrow-next.c69fbf7619a78791e9c2.svg",
+    "main.46ad07d2.css.map": "/static/css/main.46ad07d2.css.map",
+    "main.6a1a33b3.js.map": "/static/js/main.6a1a33b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46ad07d2.css",
+    "static/js/main.6a1a33b3.js"
+  ]
+}

@@ -1,12 +1,8 @@
 import css from "./HeroTitle.module.css";
 
 export default function HeroTitle() {
-  function onHeroTitleMouseover() {
-    const label = document.querySelector(`${css.heroLabel}`);
-  }
-
   return (
-    <h1 className={css.heroTitle} onMouseOver={onHeroTitleMouseover}>
+    <h1 className={css.heroTitle}>
       Choose your winter{" "}
       <span className={css.heroLabel}>
         look<sup className={css.heroLabelAsteric}>*</sup>
