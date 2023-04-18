@@ -17,6 +17,9 @@ export const App = () => {
 
   function toggleModal() {
     setModal(!modal);
+    !modal
+      ? (document.querySelector("body").style.overflow = "hidden")
+      : (document.querySelector("body").style.overflow = "visible");
   }
 
   return (
