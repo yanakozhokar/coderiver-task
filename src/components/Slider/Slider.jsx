@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from "react";
-import Sweater from "../../images/sweater-desk-1x.jpg";
-import Mountain from "../../images/mountain-desk-1x.jpg";
-import Woman from "../../images/woman-desk-1x.jpg";
-import Shoes from "../../images/shoes-desk-1x.jpg";
-import Leg from "../../images/leg-desk-1x.jpg";
-import Carousel from "nuka-carousel";
-import "./Slider.css";
+import React, { useEffect, useState } from 'react';
+import Sweater from '../../images/sweater-desk-1x.jpg';
+import Mountain from '../../images/mountain-desk-1x.jpg';
+import Woman from '../../images/woman-desk-1x.jpg';
+import Shoes from '../../images/shoes-desk-1x.jpg';
+import Leg from '../../images/leg-desk-1x.jpg';
+import Carousel from 'nuka-carousel';
+import './Slider.css';
 
 export default function Slider() {
   const [slides, setSlides] = useState(() => slidesAmount());
 
   useEffect(() => {
     const prevBtn = document.querySelector(
-      ".slider-control-centerleft > button"
+      '.slider-control-centerleft > button'
     );
     const nextBtn = document.querySelector(
-      ".slider-control-centerright > button"
+      '.slider-control-centerright > button'
     );
-    prevBtn.textContent = "";
-    nextBtn.textContent = "";
+    prevBtn.textContent = '';
+    nextBtn.textContent = '';
 
     function handleResize() {
       setSlides(slidesAmount());
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
